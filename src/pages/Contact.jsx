@@ -1,3 +1,6 @@
+import { useParams } from "react-router-dom";
+
 export const Contact = () => {
-    return <h3> Contact </h3>
-}
+  const { id } = useParams();
+  return <h3> Contact {id}</h3>;
+};
