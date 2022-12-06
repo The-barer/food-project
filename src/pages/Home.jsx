@@ -7,7 +7,7 @@ export const Home = () => {
 
   useEffect(() => {
     getAllCategories().then((data) => {
-      setCategories(data);
+      setCategories(data.categories);
     });
   }, []);
 
