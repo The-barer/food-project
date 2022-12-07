@@ -7,6 +7,7 @@ import { About } from "./pages/About";
 import { Category } from "./pages/Category";
 import { Meal } from "./pages/Meal";
 import { Home } from "./pages/Home";
+import { projectName } from './config'
 
 function App() {
   return (
@@ -15,11 +16,11 @@ function App() {
         <Header />
         <div className="container content">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/category/:name" element={<Category />} />
-            <Route path="/meal/:id" element={<Meal />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path={projectName + "/"} element={<Home />} />
+            <Route path={projectName + "/about"} element={<About />} />
+            <Route path={projectName + "/category/:name"} element={<Category />} />
+            <Route path={projectName + "/meal/:id"} element={<Meal />} />
+            <Route path={projectName + "*"} element={<NotFound />} />
           </Routes>
         </div>
         <Footer />
