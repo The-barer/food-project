@@ -4,7 +4,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { NotFound } from "./pages/404";
 import { About } from "./pages/About";
-import { Contact } from "./pages/Contact";
+import { Category } from "./pages/Category";
+import { Meal } from "./pages/Meal";
 import { Home } from "./pages/Home";
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/Contact/:id" element={<Contact />} />
+            <Route path="/category/:name" element={<Category />} />
+            <Route path="/meal/:id" element={<Meal />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
