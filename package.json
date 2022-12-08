@@ -42,7 +42,7 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "TheBarer create React app",
   "main": "index.js",
   "repository": {
     "type": "git",
