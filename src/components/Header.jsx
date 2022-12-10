@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import { projectName } from "../config";
 
 export default function Header() {
   return (
     <nav className="green darken-1">
       <div className="nav-wrapper">
-        <Link to={projectName + "/"} className="brand-logo">
+        <Link to="/" className="brand-logo">
           Goods
         </Link>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
@@ -19,10 +18,10 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <Link to={projectName + "/"}>Home</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to={projectName + "/About"}>About</Link>
+            <Link to="/About">About</Link>
           </li>
         </ul>
       </div>
