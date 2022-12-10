@@ -6,7 +6,7 @@ export const Recipe = (props) => {
       style={{
         display: "flex",
         flexDirection: "column",
-        maxWidth: "400px",
+        maxWidth: "800px",
         justifyContent: "center",
         alignItems: "center",
       }}
