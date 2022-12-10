@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { projectName } from '../config'
 
 export const MealItem = (props) => {
   const { idMeal, strMeal, strMealThumb } = props;
@@ -12,7 +11,7 @@ export const MealItem = (props) => {
         <span className="card-title">{strMeal}</span>
       </div>
       <div className="card-action">
-        <Link className="btn" to={`/${projectName}/meal/${idMeal}`}>
+        <Link className="btn" to={`/meal/${idMeal}`}>
           Посмотреть
         </Link>
       </div>

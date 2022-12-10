@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { projectName } from '../config'
 
 export const CategoryItem = (props) => {
   const { strCategory, strCategoryDescription, strCategoryThumb } = props;
@@ -14,7 +13,7 @@ export const CategoryItem = (props) => {
         <p>{strCategoryDescription.slice(0, 80)}...</p>
       </div>
       <div className="card-action">
-        <Link className="btn" to={`/${projectName}/category/${strCategory}`}>
+        <Link className="btn" to={`/category/${strCategory}`}>
           Посмотреть
         </Link>
       </div>
